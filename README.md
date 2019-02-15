@@ -26,7 +26,7 @@ Test the entire application as a whole.
 * Single responsibility
 
 ## Install Karma
-To generate the configuration ffile
+To generate the configuration file
 ```
 $ karma init
 Which testing framework do you want to use?
