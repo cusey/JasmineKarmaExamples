@@ -2,15 +2,15 @@
 
 # Jasmine Karma Examples
 
-# Introduction      
+## Introduction      
 
-# Jasmine Testing Suite   
+### Jasmine Testing Suite   
 Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax. It is heavily influenced by other unit testing frameworks, such as ScrewUnit, JSSpec, JSpec, and RSpec.
 
-# Karma Test Runner for Javascript    
+### Karma Test Runner for Javascript    
 The main goal for Karma is to bring a productive testing environment to developers. The environment being one where they don't have to set up loads of configurations, but rather a place where developers can just write the code and get instant feedback from their tests. Because getting quick feedback is what makes you productive and creative.
 
-## Types of Tests      
+### Types of Tests      
 * Unit Tests
 Test a component _*in isolation,*_ without external resources (e.g. file system, database, API endpoints) So you are testing just the Angular component.
 
@@ -20,12 +20,12 @@ Test a component _*with*_ external resources (e.g. file system, database, API en
 * End-to-End Tests
 Test the entire application as a whole.
 
-## Clean Coding Practices
+### Clean Coding Practices
 * Small functions/methods (10 lines of code or less)
 * Proper naming
 * Single responsibility
 
-# Install Karma
+## Install Karma
 To generate the configuration ffile
 ```
 $ karma init
@@ -54,17 +54,17 @@ Config file generated at "Users/cusey/code/karma.conf.js"
 
 ```
 
-Install Angulur
+## Install Angulur
 ```
 $ npm install
 ```
 
-# Start Karma         
+## Start Karma         
 ```
 $ karma start
 ```
 
-# Start Testing in Angular 
+## Start Testing in Angular 
 
 ```
 $ ng test
