@@ -4,10 +4,10 @@
 
 ## Introduction      
 
-#### Jasmine Testing Suite   
+### Jasmine Testing Suite   
 Jasmine is an open source testing framework for JavaScript. It aims to run on any JavaScript-enabled platform, to not intrude on the application nor the IDE, and to have easy-to-read syntax. It is heavily influenced by other unit testing frameworks, such as ScrewUnit, JSSpec, JSpec, and RSpec.
 
-#### Karma Test Runner for Javascript    
+### Karma Test Runner for Javascript    
 The main goal for Karma is to bring a productive testing environment to developers. The environment being one where they don't have to set up loads of configurations, but rather a place where developers can just write the code and get instant feedback from their tests. Because getting quick feedback is what makes you productive and creative.
 
 ### Types of Tests      
