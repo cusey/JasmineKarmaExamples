@@ -54,11 +54,6 @@ Config file generated at "Users/cusey/code/karma.conf.js"
 
 ```
 
-## Install Angulur
-```
-$ npm install
-```
-
 ## Start Karma         
 ```
 $ karma start
