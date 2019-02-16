@@ -1,6 +1,8 @@
 import { Fundamentals } from './code';
 import { ArraysAndStrings } from './code';
 import { SetupAndTeardownComponent } from './code';
+import { TodoFormComponent } from './code';
+import { VoteComponent } from './code';
 
 describe('Fundamentals', () => {
     it('compute(-1) :should return 0 if input is negative', () => {
@@ -59,5 +61,46 @@ describe('SetupAndTeardownComponent', () => {
         // Assert
         expect(component.totalVotes).toBe(-1);
 
+    });
+});
+
+import { FormBuilder } from '@angular/forms';
+
+describe('TodoFormComponent', () => {
+    let component: TodoFormComponent;
+
+    beforeEach(() => {
+        component = new TodoFormComponent(new FormBuilder());
+    });
+
+    it('should create a form with 2 controls ( NAME and EMAIL)', () => {
+        expect(component.form.contains('name')).toBe(true);
+        expect(component.form.contains('email')).toBeTruthy();
+    });
+
+    it('should make the NAME control required', () => {
+        const nameControl = component.form.get('name');
+        nameControl.setValue('');
+        expect(nameControl.valid).toBeFalsy();
+    });
+});
+
+
+
+describe('VoteComponent', () => {
+    let component: VoteComponent;
+
+    beforeEach(() => {
+        component = new VoteComponent();
+    });
+
+    it('should raise voteChanged event when upvoted', () => {
+        let totalVotes = null;
+        component.voteChanged.subscribe( tv => totalVotes = tv );
+
+        component.upVote();
+
+        //expect(totalVotes).not.toBeNull();
+        expect(totalVotes).toBe(1);
     });
 });

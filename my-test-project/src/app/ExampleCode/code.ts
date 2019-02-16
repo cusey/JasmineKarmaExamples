@@ -1,3 +1,7 @@
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { EventEmitter } from '@angular/core';
+
+
 // 01 Fundamentals
 export class Fundamentals {
 
@@ -30,5 +34,30 @@ export class SetupAndTeardownComponent {
     }
     downVote() {
        this.totalVotes--;
+    }
+}
+
+
+// 04 Forms
+export class TodoFormComponent {
+    form: FormGroup;
+
+    constructor(fb: FormBuilder) {
+        this.form = fb.group({
+            name: ['', Validators.required],
+            email: [''],
+        });
+    }
+}
+
+// 05 Event Emitters
+export class VoteComponent {
+    totalVotes = 0;
+    voteChanged = new EventEmitter();
+
+    upVote() {
+        this.totalVotes++;
+        // Rises an event called voteChanged. In the event data should be totalVotes
+        this.voteChanged.emit(this.totalVotes);
     }
 }
