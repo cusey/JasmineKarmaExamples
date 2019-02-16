@@ -31,7 +31,7 @@ describe('ArraysAndStrings', () => {
 });
 
 describe('SetupAndTeardownComponent', () => {
-    let component;
+    let component: SetupAndTeardownComponent;
 
     beforeEach(() => {
         // Set up
