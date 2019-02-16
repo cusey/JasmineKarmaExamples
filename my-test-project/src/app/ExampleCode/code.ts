@@ -21,9 +21,6 @@ export class ArraysAndStrings {
     }
 }
 
-
-
-
 // 03 Setup And Teardown
 export class SetupAndTeardownComponent {
     totalVotes = 0;
@@ -31,7 +28,6 @@ export class SetupAndTeardownComponent {
     upVote() {
        this.totalVotes++;
     }
-
     downVote() {
        this.totalVotes--;
     }
