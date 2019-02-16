@@ -39,7 +39,7 @@ describe('SetupAndTeardownComponent', () => {
 
     });
     afterEach(() => {
-        // tear down
+        // Tear down
     });
 
     it('upVotes(): should increment totalVotes when upvoted', () => {
