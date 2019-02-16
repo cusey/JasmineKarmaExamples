@@ -100,7 +100,7 @@ describe('VoteComponent', () => {
 
         component.upVote();
 
-        //expect(totalVotes).not.toBeNull();
+        // expect(totalVotes).not.toBeNull();
         expect(totalVotes).toBe(1);
     });
 });
