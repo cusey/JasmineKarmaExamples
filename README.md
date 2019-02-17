@@ -65,6 +65,16 @@ $ karma start
 $ ng test
 ```
 
+## See Code Coverage
+```
+$ ng test --code-coverage
+```
+<img 
+src="https://github.com/cusey/ImageForWiki/blob/master/JasmineKarmaExamples/code-coverage.PNG" 
+alt="Code Coverage" 
+height="350px"/>  
+
+
 ## Authors
 * John Cusey - CuseyHub  
 
